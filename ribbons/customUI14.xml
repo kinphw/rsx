@@ -1,12 +1,18 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" >
   <ribbon>
     <tabs>
-        <tab id="rsTab" label="RS">
-            <group id="rsGroup"  label="RS">
-                <button id="rsButton"  size="large" imageMso="ShapesMoreShapes"
+        <tab id="tTab" label="RS">
+            <group id="gGroup"  label="RS">
+
+                <button id="btnButton"  size="large" imageMso="ShapesMoreShapes"
             onAction="aMain.RSMain" screentip="RS Run" label="Run"
             supertip="RSRun"/>
-                <button id="rsHelp"  size="large" imageMso="Help"
+
+                <button id="btnSet"  size="large" imageMso="ContextHelp"
+            onAction="bCommon.CallSet" screentip="Setting" label="Setting"
+            supertip="Setting"/>
+
+                <button id="btnHelp"  size="large" imageMso="Help"
             onAction="aHelp.RSHelp" screentip="HELP" label="Help"
             supertip="HELP"/>
             </group>

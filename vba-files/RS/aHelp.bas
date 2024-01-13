@@ -10,6 +10,6 @@ Sub RSHelp(control As IRibbonControl)
      msg = "책무구조도 규정인식 자동화 v0.0.2 by PHW" + vbCrLf + vbCrLf
      msg = msg + "대상 : K사 Word 서식 내규"
      
-     Call MsgBox(msg)
+     Call MsgBox(msg, , "책무구조도")
 
 End Sub

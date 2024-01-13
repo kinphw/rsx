@@ -1,5 +1,6 @@
 Attribute VB_Name = "bRSOther"
 'namespace=vba-files\RS\handler
+Option Explicit
 Function CreateArray() '파일객체를 전역변수로부터 받아서 실행
 ' 모든 행을 arrString으로 추출
 
@@ -18,6 +19,8 @@ Function PrepArray(arrString() As String) '파일객체를 받아서 실행
     'Array to ArrayList
     Dim ArrList As Object
     Set ArrList = CreateObject("System.Collections.ArrayList")
+    
+    Dim i As Variant
     For Each i In arrString: ArrList.Add (i): Next i 'Array to ArrayList
     
     '출력 : FOR TEST
