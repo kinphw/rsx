@@ -1,0 +1,16 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" >
+  <ribbon>
+    <tabs>
+        <tab id="rsTab" label="RS">
+            <group id="rsGroup"  label="RS">
+                <button id="rsButton"  size="large" imageMso="ShapesMoreShapes"
+            onAction="aMain.RSMain" screentip="RS Run" label="Run"
+            supertip="RSRun"/>
+                <button id="rsHelp"  size="large" imageMso="Help"
+            onAction="aHelp.RSHelp" screentip="HELP" label="Help"
+            supertip="HELP"/>
+            </group>
+        </tab>
+    </tabs>
+  </ribbon>
+</customUI>
